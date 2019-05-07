@@ -7,7 +7,8 @@ import PROJECTS from "./data/projects";
         {
           display: 'inline-block',
           margin:'10',
-          width:'320px'
+          width:'30%',
+          verticalAlign:'top'
         }
       }
       key={project.id}

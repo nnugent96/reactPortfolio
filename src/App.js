@@ -14,6 +14,11 @@ class App extends Component {
   render(){
     return(
       <div>
+        <img
+          src="https://pbs.twimg.com/profile_images/1006264949801410560/hcOf1bZS_400x400.jpg"
+          className="profileImage"  
+          alt="profile"
+        />
         <h2>Hello!</h2>
         <p>I like to work on things.</p>
         {
