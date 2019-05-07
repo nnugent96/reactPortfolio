@@ -2,10 +2,25 @@ import React, { Component } from "react";
 import PROJECTS from "./data/projects";
 
   const Project = ({ project }) =>(
-    <div className="center" style={{ display: 'inline-block', margin:'10', padding:'10', width:'300px' }} key={project.id}>
+    <div
+      style={
+        {
+          display: 'inline-block',
+          margin:'10',
+          width:'320px'
+        }
+      }
+      key={project.id}
+    >
       <h3>{project.title}</h3>
-      <div className="center">
-        <img src={project.image} link={project.link} alt={project.title} height="120px"/>
+      <div>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={project.image} alt={project.title} height="120px"/>
+        </a>
       </div>
       {project.description}
     </div>

@@ -2,8 +2,14 @@ import React from 'react';
 import SOCIALPROFILES from './data/socialProfiles';
 
 const Profile = ({ profile }) => (
-  <div style={{ display: 'inline-block', margin:'10', width: '100px'  }}>
-    <a href={profile.link}><img src={profile.image} alt={profile.title} style={{ height: '50px' }} /></a>
+  <div style={{ display: 'inline-block', margin:'10', width: '60px'  }}>
+    <a
+      href={profile.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src={profile.image} alt={profile.title} style={{ height: '40px' }} />
+    </a>
   </div>
 );
 
